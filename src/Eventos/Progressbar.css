@@ -1,0 +1,42 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  column-gap: 10px;
+  height: 60%;
+  width: 150%;
+  margin: 10%;
+  border: 2px solid grey;
+  border-radius: 25px;
+  color: #6b6b6b;
+}
+
+progress[value] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 85%;
+  margin-left: 10px;
+}
+
+progress[value]::-moz-progress-bar {
+  background-color: rgb(0, 255, 221);
+  border-radius: 12px;
+}
+.close-icon {
+  align-self: flex-end;
+  color: red;
+  background-color: black;
+  font-size: 70px;
+  margin-top: -65px;
+  margin-bottom: 12px;
+  margin-right: 2px;
+}
+
+.Message {
+  margin-top: -10px;
+  margin-left: 10px;
+}
+h1 {
+  margin-left: 10px;
+}

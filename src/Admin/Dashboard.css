@@ -1,0 +1,199 @@
+body {
+  margin-top: 10px;
+  margin-bottom: 2px;
+  padding: 0;
+  color: #fff;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  box-sizing: border-box;
+  display: inline-flex;
+}
+
+.Container {
+  display: grid;
+  grid-template-columns: 10% auto;
+  grid-template-rows: 100%;
+  grid-template-areas: "sidebar Main";
+  height: 100vh;
+  width: 100%;
+  column-gap: 19%;
+}
+
+/* Sidebar child's customize*/
+.aside {
+  grid-area: sidebar;
+  display: flex;
+  box-sizing: border-box;
+  margin-left: 5%;
+  box-shadow: 12px 8px 22px rgb(0 0 0 / 0.2);
+  width: 186px;
+  border-radius: 20px;
+}
+img {
+  height: 25px;
+  width: 163px;
+  padding-bottom: 22px;
+}
+.items {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10%;
+  padding-left: 10px;
+  font-style: bold;
+}
+.emoticon {
+  font-size: 24px;
+}
+
+.text {
+  padding-top: 26px;
+  color: grey;
+  margin-left: -7px;
+  font-size: 17px;
+}
+.child {
+  color: grey;
+  display: flex;
+  margin: -18px 0px 0px 0px;
+}
+.child:nth-child(0) {
+  display: flex;
+}
+.child:nth-child(1) {
+}
+.child:nth-child(2) {
+}
+.child:nth-child(3) {
+}
+.child:nth-child(4) {
+}
+.child:nth-child(5) {
+}
+.child:nth-child(6) {
+  margin-top: 25em;
+}
+
+.button {
+  font-size: 14px;
+  width: 170px;
+  margin-left: -15px;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  background: linear-gradient(
+    90deg,
+    rgba(65, 192, 243, 1) 0%,
+    rgba(19, 181, 117, 1) 100%
+  );
+}
+
+.search {
+  color: #00bad2;
+}
+
+/*    Main child's customi<e;*/
+
+.Main {
+  grid-area: Main;
+  display: inline-flex;
+  width: 235%;
+  border-radius: 30px;
+  box-shadow: 0 3px 18px rgb(0 0 0 / 0.2);
+}
+
+.Main-childs {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.Title {
+  margin-left: 2%;
+  color: grey;
+}
+
+.Seleccionar {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-left: 100%;
+}
+label {
+  color: grey;
+  font-size: 22px;
+}
+
+.empresas {
+  color: grey;
+  display: flex;
+  border: none;
+  border-bottom: 3px solid #14d233;
+  background-color: white;
+  text-align: left;
+  font-size: 18px;
+  margin: -30px 0px 0px 100px;
+  width: 11em;
+}
+
+.load-file {
+  display: flex;
+  width: 215%;
+  height: 45%;
+  margin-left: 6%;
+  margin-top: 9%;
+  justify-content: center;
+  box-sizing: border-box;
+  flex-direction: column;
+  border-radius: 40px;
+  border: 5px dashed #d5cfcf;
+  color: grey;
+  text-align: center;
+}
+
+.side:nth-child(0) {
+  background-color: red;
+}
+
+.side:nth-child(1) {
+  align-self: center;
+  margin-top: -5%;
+}
+
+.side:nth-child(2) {
+  margin-top: -2%;
+}
+
+.side:nth-child(3) {
+  display: flex;
+  align-self: center;
+  margin-top: -2.5%;
+  font-size: 15px;
+}
+
+/* Media queries*/
+
+@media only screen and (max-width: 1400px) {
+  .Container {
+    display: grid;
+    grid-template-columns: 10% 57%;
+    grid-template-rows: 100%;
+    grid-template-areas: "sidebar Main";
+    height: 100vh;
+    column-gap: 4%;
+  }
+  .Main {
+    grid-area: Main;
+    display: flex;
+    margin: 0px 25px 0px 90px;
+  }
+  .load-file {
+    height: 300px;
+    margin-top: 50px;
+    width: 90%;
+  }
+
+  .Seleccionar {
+    display: flex;
+    align-self: center;
+    margin-left: -10px;
+  }
+}

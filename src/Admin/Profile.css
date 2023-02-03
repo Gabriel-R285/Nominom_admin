@@ -1,0 +1,146 @@
+body {
+  margin: 0px;
+  padding: 0;
+}
+
+.Container {
+  display: grid;
+  width: 1300px;
+  height: 700px;
+  background-color: white;
+  grid-template-columns: 15% auto;
+  grid-template-rows: 1fr;
+  grid-gap: 20px;
+  grid-template-areas:
+    "sidebar Main"
+    "sidebar Main";
+}
+
+.Main {
+  grid-area: Main;
+  border: 6px solid white;
+  border-radius: 30px;
+  font-size: 18px;
+  color: grey;
+}
+.title {
+  margin-left: 10px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  margin-left: 300px;
+  margin-top: 150px;
+  color: white;
+  gap: 1px;
+  align-items: flex-start;
+  width: 36rem;
+  height: 18rem;
+  border-radius: 25px;
+  background: linear-gradient(
+    90deg,
+    rgba(65, 192, 243, 1) 0%,
+    rgba(19, 181, 117, 1) 100%
+  );
+}
+
+.items {
+  color: white;
+  margin-left: 10px;
+  height: 15px;
+  font-size: 24px;
+  box-sizing: border-box;
+}
+
+.items:nth-child(2) {
+  font-size: 40px;
+  margin-top: -10px;
+  margin-left: 10px;
+}
+.items:nth-child(3) {
+  margin-left: 15px;
+  margin-top: 35px;
+  padding-top: 5px;
+}
+.items:nth-child(4) {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.items:nth-child(5) {
+  padding-top: 2px;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.pencil{
+  display: flex;
+  justify-content: center;
+  margin-left: 15em;
+
+}
+
+img{
+  display: flex;
+  margin-left: -6px;
+  width: 180px;
+  margin-top: 10px;
+  padding-bottom: 50px;
+  padding-right: 10px;
+}
+
+.Sidebar {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-left: 10px;
+  border-radius: 30px;
+  border: 6px outset grey;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+
+
+.child {
+  display: flex;
+  color: grey;
+  padding-right: 20px;
+  padding-top: 1px;
+}
+
+.text {
+  font-size: 18px;
+  padding-left: 8px;
+  padding-bottom: 4px;
+}
+
+.child:nth-child(6) {
+  margin: 19.5em 1em 0px 0px;
+  width: 150px;
+  padding: 0px 10px 0px 3px;
+}
+
+.child:nth-child(2) {
+  color: grey;
+  font-size: 18px;
+}
+
+
+.button {
+  height: 28px;
+  width: 170px;
+  margin: 20px 1px 1px -3px;
+  font-size: 16px;
+  color: white;
+  padding: 1px 0px 10px 4px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(
+    90deg,
+    rgba(65, 192, 243, 1) 0%,
+    rgba(19, 181, 117, 1) 100%
+  );
+}

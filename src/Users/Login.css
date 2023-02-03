@@ -1,0 +1,79 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.form {
+  background-color: white;
+}
+
+.jpg {
+  width: 200px;
+  height: 150px;
+  margin-left: 10px;
+}
+
+input {
+  display: flex;
+  border: none;
+  height: 45px;
+  margin-top: 10px;
+}
+
+input::placeholder {
+  color: #41c0f3;
+  font-size: 16px;
+}
+
+a {
+  text-align: end;
+  color: #41c0f3;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+button {
+  font-weight: bold;
+  color: white;
+  border: none;
+  height: 40px;
+  width: 350px;
+  border-radius: 5px;
+  margin-top: -15px;
+  background: linear-gradient(
+    90deg,
+    rgba(65, 192, 243, 1) 0%,
+    rgba(19, 181, 117, 1) 100%
+  );
+}
+
+svg {
+  color: #41c0f3;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 350px;
+  align-items: stretch;
+}
+
+.inputs {
+  margin-bottom: 25px;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: left;
+  border-bottom: 2px solid #41c0f3;
+}
+.password-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: -20px;
+}

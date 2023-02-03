@@ -1,0 +1,191 @@
+body {
+  margin-top: 10px;
+  margin-bottom: 2px;
+  padding: 0;
+  color: #fff;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  display: flex;
+}
+
+.Container {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  grid-template-rows: 100%;
+  grid-template-areas: "sidebar Main";
+  height: 100vh;
+  column-gap: 6%;
+}
+/* Sidebar child's customize*/
+.aside {
+  grid-area: sidebar;
+  display: flex;
+  box-sizing: border-box;
+  margin-left: 5%;
+  margin-bottom: 20px;
+  box-shadow: 12px 8px 22px rgb(0 0 0 / 0.2);
+  width: 186px;
+  border-radius: 20px;
+}
+img {
+  height: 30px;
+  width: 175px;
+  padding-bottom: 22px;
+  margin-left: 0.5px;
+}
+.aside_childs {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10%;
+  padding-left: 10px;
+  font-style: bold;
+}
+.emoticon {
+  font-size: 24px;
+}
+
+.text {
+  padding-top: 26px;
+  color: grey;
+  margin-left: -7px;
+  font-size: 17px;
+}
+.child {
+  color: grey;
+  display: flex;
+  margin-left: 2px;
+}
+.child:nth-child(0) {
+  display: flex;
+}
+.child:nth-child(1) {
+}
+.child:nth-child(2) {
+}
+.child:nth-child(3) {
+}
+.child:nth-child(4) {
+}
+.child:nth-child(5) {
+}
+.child:nth-child(6) {
+  margin-top: 25em;
+  padding-bottom: 15%;
+}
+
+.button {
+  font-size: 14px;
+  width: 170px;
+  margin-left: -3px;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  background: linear-gradient(
+    90deg,
+    rgba(65, 192, 243, 1) 0%,
+    rgba(19, 181, 117, 1) 100%
+  );
+}
+
+/* Main customize */
+
+.Main {
+  grid-area: Main;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  font-size: 18px;
+  overflow: hidden;
+  color: grey;
+}
+/*Headers main customize*/
+.main_header {
+  display: flex;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+}
+
+.items:nth-child(1) {
+  padding-right: 9em;
+  margin-left: 10px;
+}
+.items:nth-child(2) {
+  padding-right: 10px;
+  margin-top: 30px;
+}
+
+.items:nth-child(3) {
+  padding-right: 40px;
+  margin-top: 30px;
+}
+
+.items:nth-child(5) {
+  display: flex;
+  margin-left: 100px;
+  margin-top: -10px;
+  font-size: 22px;
+}
+
+select {
+  width: 150px;
+  background-color: white;
+  border: none;
+  color: grey;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 2px solid green;
+}
+
+.tablas {
+}
+
+table {
+  margin-left: 5px;
+  border-collapse: collapse;
+  background-color: white;
+}
+thead {
+  background-color: #0ed1e4;
+  color: white;
+}
+
+.excel {
+  font-size: 50px;
+  color: green;
+}
+
+input {
+  border: 3px solid green;
+  border-radius: 10px;
+}
+
+input::placeholder {
+  color: grey;
+}
+
+th,
+td {
+  height: 40px;
+  padding: 10px;
+  border-top: 1px solid grey;
+}
+
+/* Media queries*/
+
+@media only screen and (max-width: 1400px) {
+  .Container {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 100%;
+    grid-template-areas: "sidebar Main";
+    height: 100vh;
+    column-gap: 6%;
+  }
+  .Main {
+    grid-area: Main;
+    width: 100%;
+    margin-right: 30px;
+  }
+}
