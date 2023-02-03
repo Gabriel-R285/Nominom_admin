@@ -16,7 +16,7 @@
 <li>Event Handlers</li>
 
 
-# Tecnologies
+# Technologies
 
 <li>Reactjs</li>
 
